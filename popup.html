@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Stream Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            width: 300px;
+        }
+        h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        label {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #0088cc;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005f8c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Telegram Stream Settings</h1>
+    <label for="chatId">Chat ID:</label>
+    <input type="text" id="chatId" placeholder="Introduce el Chat ID">
+
+    <label for="endpoint">Endpoint de salida:</label>
+    <input type="text" id="endpoint" placeholder="Introduce el endpoint de salida">
+
+    <button id="saveButton">Guardar</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
